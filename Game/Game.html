@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title> My First App </title> 
+	<script src="js.js"></script>
+	<link rel="stylesheet" href="css.css">
+
+
+</head>
+
+
+
+<body>
+
+	<p> input save here to load. (find save in game files) </p>
+	<input onchange="readFile(this)"  type="file">
+	<button type="button" onclick = "save()"> SAVE </button>
+	<div class = "center">
+		<button type="button" class = "btn-main" onclick = "mainClick()"><img src="money.jpg" width="100%" height="100%"></img></button>
+		<p id = "money">$0</p>
+	</div>
+	
+</body>
+</html>
