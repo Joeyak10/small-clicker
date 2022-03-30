@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title> My First App </title> 
+	<title> Game </title> 
 	<script src="js.js"></script>
 	<link rel="stylesheet" href="css.css">
 
@@ -12,12 +12,21 @@
 
 <body>
 
-	<p> input save here to load. (find save in game files) </p>
-	<input onchange="readFile(this)"  type="file">
-	<button type="button" onclick = "save()"> SAVE </button>
+		<div class = "left"> 
+			<p> input save here to load. </p>
+			<input onchange="readFile(this)"  type="file">
+			<button type="button" onclick = "save()"> SAVE </button>
+		</div>
 	<div class = "center">
+
+		<h3> Pro Tip: after selecting a button, use ENTER to click </h3>
 		<button type="button" class = "btn-main" onclick = "mainClick()"><img src="money.jpg" width="100%" height="100%"></img></button>
 		<p id = "money">$0</p>
+
+
+
+		<button type="button" onclick = "buyUpgrade1()"> Upgrade Click Power <br><b id="up1cost"> $100 </b></button> 
+		<button type="button" onclick = "buyUpgrade2()"> Upgrade Click Multi <br><b id="up2cost"> $1000 </b></button> 
 	</div>
 	
 </body>
